@@ -1,13 +1,16 @@
+/*General*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 .main-container {
   display: flex;
   height: 100vh;
   position: relative;
 }
+
 .red-box {
   background-color: #be0909;
   flex: 74%;
@@ -20,6 +23,30 @@
   left: 585px;
   top: 205px;
 }
+.yellow-box {
+  background-color: #ffb039;
+  flex: 26%;
+}
+
+.inputname:hover,
+.inputemail:hover,
+.inputmessage-short:hover,
+.textarea-long:hover {
+  border-bottom: 3px solid #9dbebb;
+}
+.inputname:focus,
+.inputemail:focus,
+.inputmessage-short:focus,
+.textarea-long:focus {
+  outline: none;
+
+  border-bottom: 3px solid #468189;
+}
+.inputemail:focus::placeholder,
+.textarea-long:focus::placeholder {
+  opacity: 0;
+}
+/*Form*/
 
 .form-container {
   display: flex;
@@ -46,7 +73,11 @@
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #9dbebb;
+  color: #fdffff;
+  padding: 5px 5px 0px 5px;
+  transition: 0.5s;
 }
+
 .email {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -59,21 +90,23 @@
 }
 .inputemail {
   width: 160px;
+  padding: 5px 5px 0px 5px;
   background-color: #be0909;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #9dbebb;
+  color: #fdffff;
+  transition: 0.5s;
+}
+.inputemail::placeholder {
+  color: #fdffff;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.3em;
-  color: #fdffff;
-}
-.inputemail::placeholder {
-  color: #fdffff;
 }
 .message-short {
   font-family: "Roboto";
@@ -92,6 +125,9 @@
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #9dbebb;
+  color: #fdffff;
+  padding: 5px 5px 0px 5px;
+  transition: 0.5s;
 }
 .message-long {
   font-family: "Roboto", sans-serif;
@@ -109,8 +145,10 @@
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #9dbebb;
-  resize: none;
   overflow: auto;
+  color: #fdffff;
+  padding: 5px 5px 0px 5px;
+  transition: 0.5s;
 }
 .textarea-long::placeholder {
   color: #feffff;
@@ -145,8 +183,4 @@
   box-shadow: 0px 0px 12px #a3c0c4;
   transform: scale(1.1);
   cursor: pointer;
-}
-.yellow-box {
-  background-color: #ffb039;
-  flex: 26%;
 }
