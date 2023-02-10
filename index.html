@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment 7</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="red-box">
+        <form action="" class="form-container">
+          <label for="fullname" class="fullname">Full Name</label>
+          <input type="text" id="fullname" name="name" class="inputname" />
+          <label for="email" class="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            name="email"
+            class="inputemail"
+            required
+          />
+          <label for="message_short" class="message-short"
+            >Message Regarding</label
+          >
+          <input
+            type="text"
+            id="message_short"
+            name="message"
+            class="inputmessage-short"
+          />
+          <label for="message_long" class="message-long">Message</label>
+          <textarea
+            name="message"
+            id="message_long"
+            cols="20"
+            rows="2"
+            placeholder="Your Message"
+            class="textarea-long"
+          ></textarea>
+          <button class="btn">Send Message</button>
+        </form>
+      </div>
+      <div class="yellow-box"></div>
+    </main>
+  </body>
+</html>

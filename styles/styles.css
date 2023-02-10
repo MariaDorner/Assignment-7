@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+.red-box {
+  background-color: #be0909;
+  flex: 74%;
+}
+.red-box::after {
+  content: url(/pictures/duck.png);
+  position: absolute;
+  width: 663px;
+  height: 603px;
+  left: 585px;
+  top: 205px;
+}
+
+.form-container {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: start;
+  margin: 100px 0px 0px 50px;
+  row-gap: 30px;
+}
+.fullname {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #feffff;
+}
+.inputname {
+  width: 400px;
+  background-color: #be0909;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #9dbebb;
+}
+.email {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fcffff;
+}
+.inputemail {
+  width: 160px;
+  background-color: #be0909;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #9dbebb;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.3em;
+  color: #fdffff;
+}
+.inputemail::placeholder {
+  color: #fdffff;
+}
+.message-short {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #feffff;
+}
+.inputmessage-short {
+  width: 160px;
+  background-color: #be0909;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #9dbebb;
+}
+.message-long {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.3em;
+  color: #feffff;
+}
+.textarea-long {
+  width: 400px;
+  background-color: #be0909;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #9dbebb;
+  resize: none;
+  overflow: auto;
+}
+.textarea-long::placeholder {
+  color: #feffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.3em;
+}
+.btn {
+  width: 202px;
+  height: 48px;
+  background: #468189;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  align-self: center;
+  transition: 0.4s;
+}
+.btn:hover {
+  background: #468189;
+  box-shadow: 0px 0px 12px #a3c0c4;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.yellow-box {
+  background-color: #ffb039;
+  flex: 26%;
+}
